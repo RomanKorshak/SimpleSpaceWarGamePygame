@@ -4,9 +4,9 @@ import pygame as pg
 class Ship:
     def __init__(self, ship_color):
 
-        self.position = [360, 400]
+        self.position = [360, 400]  # pos_head
         self.ship_size = [30, 30]
-        self.velocity = 2
+        self.velocity = 5  # speed
 
         self.ship_color = ship_color
 

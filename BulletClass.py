@@ -12,9 +12,8 @@ class Bullet:
         self.bullet_color = bullet_color
         self.bullet_size = (10, 10)
         self.bullet_offset = offset
-        self.max_size_bullets = 100
 
-        self.speed = 10
+        self.speed = 10   ### velocity
 
     def create_bullet(self, play_surface, x, y):
         bullet = pg.draw.rect(
@@ -40,6 +39,6 @@ class Bullet:
                 self.bullet_color,
                 self.bullets[index]
             )
-            print(len(self.bullets))
+            # print(len(self.bullets))
 
 

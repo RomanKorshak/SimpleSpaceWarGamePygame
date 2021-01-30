@@ -13,6 +13,7 @@ class Game:
         self.green = pg.Color(0, 255, 0)
         self.blue = pg.Color(0, 0, 255)
         self.white = pg.Color(255, 255, 255)
+        self.black = pg.Color(0, 0, 0)
 
         self.fps_controller = pg.time.Clock()
 
@@ -34,7 +35,7 @@ class Game:
     def event_loop(self):
         pg.event.pump()
         change_to = "NOTHING"
-        key = pg.key.get_pressed()
+        key = pg.key.get_pressed() # {D:True, A: False }
         
         if key[pg.K_RIGHT] or key[pg.K_d]:
             change_to = "RIGHT"
